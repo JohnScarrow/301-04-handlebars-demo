@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <title>Seattle Neighborhood Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- WASSUP -->
     <!-- TODO -->
     <!-- Let's put the Handlebars template here, in a <script> tag -->
+    <script id = "neighborhood-template" type = 'text/x-handlebars-template'>
+      <h1> {{name}} </h1>
+      <p>{{city}}</p>
+      <p>{{population}}</p>
+      <p>{{founded}}</p>
+       {{{body}}}
+    </script>
 
   </head>
   <body>
@@ -18,7 +25,8 @@
       </section>
     </header>
     <main>
-      <section id="neighborhoods"></section>
+      <section id="neighborhoods">
+        </section>
     </main>
     <footer>
       &copy; 2017 Fake Data Limited
